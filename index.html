@@ -3,53 +3,62 @@
 <html>
   <head>
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,600" rel="stylesheet">
-    <link type="text/css" rel="stylesheet" href="../style/style.css">
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
     
+    <link type="text/css" rel="stylesheet" href="../style/style.css">
 
 
     <title> Pig Game</title>
 
 
   </head>
-  <body>
-    <div class="header">
-      <header>
-        <h1>Pig Game</h1>
-      </header>
+  <body class="customized-body opache">
+
+    <div class="opache jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1 class="display-4">Pig Game</h1>
+        <p class="lead">Take a risk and get higher scores!</p>
+      </div>
     </div>
 
 
-    <div class="wrapper clearfix">
+    <div class="container-flex board">
       <div class="row">
-        <div class="col-sm-6">
+        <div class="col-sm-6 card">
           <div class="player-0-panel active">
             <div class="player-name" id="player-0" >Player 1</div>
             <div class="player-score" id="score-0">43</div>
             <div class="player-current-box">
               <div class="player-current-label">Current</div>
-              <div class="player-current-score" id="current-0"></div>
+              <div class="player-current-score" id="current-0">0</div>
             </div>
           </div>
         </div>
 
-        <hr>
-
-        <div class="col-sm-6">
+        <div class="col-sm-6 card">
           <div class="player-1-panel">
             <div class="player-name" id="player-1" >Player 2</div>
             <div class="player-score" id="score-1">43</div>
             <div class="player-current-box">
               <div class="player-current-label">Current</div>
-              <div class="player-current-score" id="current-1"></div>
+              <div class="player-current-score" id="current-1">0</div>
             </div>
           </div>
         </div>
       </div>
-      
-      <img src="assets/dice-1.png", alt="Dice" class="dice">
-      <button class="btn-new-game">New Game</button>
-      <button class="btn-roll">Roll</button>
-      <button class="btn-hold">Hold</button>
+
+      <img src="assets/dice-1.png", alt="Dice" class="dice rounded img-fluid">
+      <button type="button" class="btn btn-link btn-new-game"><i class="fas fa-plus-circle fa-lg"></i>New Game</button>
+      <button type="button" class="btn btn-link btn-roll"><i class="fas fa-sync-alt fa-lg"></i>Roll</button>
+      <button type="button" class="btn btn-link btn-hold"><i class="fas fa-download fa-lg"></i>Hold</button>
 
     </div>
 

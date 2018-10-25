@@ -7,20 +7,136 @@ html {
 }
 
 body {
-  font-weight: 400;
+  font-weight: 200;
   font-family: Lato;
   align-content: center;
   text-align: center;
+  background-color: rgba(0,0,0,0);
+  text-decoration: :none;
 }
 
-.header h1{
-  font-weight: 400;
-  font-family: Lato;
-  align-content: center;
-  text-align: center;
-  background-color:rgba(0,0,0,0,1);
+.display-4 {
+  font-weight: 550;
+  font-size: 3rem;
 }
 
 .active {
-  color: red;
+  background-color: rgba(255,255,255,0.6)
+/*  background-color: rgba(197, 191, 144, 0.15);*/
 }
+
+.active .player-name {
+  font-weight: 300;
+}
+.active .player-name::after {
+  content: "\2022";
+  color: #f14848f7;
+  margin-left: 10px;
+  font-weight: 300;
+  position: absolute;
+}
+
+.jumbotron {
+  background-color: rgba(225,225,225,0.15);
+  margin-bottom: 0;
+  padding: 20px 0;
+}
+
+.board {
+  margin: 0 150px;
+}
+
+.col-sm-6 {
+  padding: 0;
+}
+
+.card {
+  border: none;
+  border-radius: 0;
+/*  background-color: rgba(255,255,255,0.6);*/
+  background-color: rgba(243, 243, 242, 0.62);
+}
+
+.player-current-box {
+  border: 1px;
+  background: #ec6060d4;
+  height:auto;
+  max-width: 150px;
+  margin:160px auto 0;
+  border-radius: 10px;
+
+}
+
+.player-current-label {
+  color: #000;
+  font-weight:300;
+  padding-top:10px;
+}
+
+.player-current-score {
+  color: white;
+  font-size: 2rem;
+}
+
+.player-0-panel, .player-1-panel {
+  padding: 70px 100px 50px;
+}
+.player-name {
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+
+.player-score {
+  font-size: 4.5rem;
+  color: #f14848f7;
+}
+
+.btn {
+  color: black;
+  text-transform: uppercase;
+  position: absolute;
+  transform: translate(-50%, 0);
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
+  text-decoration: none;
+  
+}
+
+.btn:hover {
+  font-weight: 600;
+  text-decoration: none;
+  color: #000;
+}
+
+.btn:hover i{
+  margin-right: 20px;
+  transition: margin 0.2s;
+}
+
+i {
+  margin-right: 15px;
+  color: #ec6060d4;
+}
+
+.btn-new-game {
+  top: 180px;
+}
+
+.btn-roll {
+  top:540px;
+}
+
+.btn-hold {
+  top:580px;
+}
+
+.dice {
+  position: absolute;
+  left: 50%;
+  transform:translate(-50%, 0);
+  max-width: 150px;
+  top: 300px;
+}
+
+
+
